@@ -19,6 +19,7 @@
         <outputs/>
         <remote_trigger_id>9724328b2ff1d410023e2b5df699b6a2</remote_trigger_id>
         <run_as>user</run_as>
+        <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
@@ -50,6 +51,7 @@
         <on_insert>true</on_insert>
         <on_update>false</on_update>
         <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
         <run_when_setting>both</run_when_setting>
         <run_when_user_list/>
         <run_when_user_setting>any</run_when_user_setting>
@@ -69,6 +71,31 @@
         <sys_updated_on>2020-07-09 03:57:17</sys_updated_on>
         <table>x_58872_needit_needit</table>
     </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"a108ebaa2f402010023e2b5df699b665","name":"trigger_runner","type":"java.util.HashMap"}</data>
+        <identifier>181902032fb1d410023e2b5df699b60c</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2020-10-27 14:39:19</sys_created_on>
+        <sys_id>a108ebaa2f402010023e2b5df699b665</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-10-27 14:39:19</sys_updated_on>
+        <trigger display_value="">9724328b2ff1d410023e2b5df699b6a2</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MiZGWoTYkAEFVsdC0N1iY2oY+KyjnmaXU2XzUPPEWAtljKEIqH749EIigd31JfG/42XNK+wHxPKN7oYAAAA=</data>
+        <document_id>a108ebaa2f402010023e2b5df699b665</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2020-10-27 14:39:19</sys_created_on>
+        <sys_id>2508ebaa2f402010023e2b5df699b665</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=181902032fb1d410023e2b5df699b60c^sys_idNOT INa108ebaa2f402010023e2b5df699b665"/>
     <sys_hub_flow_component action="delete_multiple" query="flow=181902032fb1d410023e2b5df699b60c^sys_idNOT IN02b620db2ff5d410023e2b5df699b61a,2c3ed8572ff5d410023e2b5df699b672,4eb620db2ff5d410023e2b5df699b617,88a5649b2ff5d410023e2b5df699b640,ea5a0a832fb1d410023e2b5df699b676,eef4ec5b2ff5d410023e2b5df699b604"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">4eb620db2ff5d410023e2b5df699b619</block>
@@ -1471,6 +1498,7 @@
         <parent_flow display_value="Needit Fulfillment">181902032fb1d410023e2b5df699b60c</parent_flow>
         <remote_trigger_id/>
         <run_as>user</run_as>
+        <run_with_roles/>
         <sc_callable>false</sc_callable>
         <status>published</status>
         <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
